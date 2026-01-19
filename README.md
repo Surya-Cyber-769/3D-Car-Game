@@ -31,4 +31,3 @@ This repository contains the full source code for a 3D Car Game that runs in the
 git clone https://github.com/Surya-Cyber-769/3D-Car-Game.git
 cd 3D-Car-Game
 python run.py
-http://localhost:8000
