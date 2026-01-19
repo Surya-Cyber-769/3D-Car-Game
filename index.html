@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ultimate 3D Car Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="hud">
+  <div>Speed: <span id="speed">0</span> km/h</div>
+  <div>Distance: <span id="distance">0</span> m</div>
+  <div>Score: <span id="score">0</span></div>
+  <div>Nitro: <span id="nitro">READY</span></div>
+</div>
+
+<div class="buttons">
+  <button onclick="pauseGame()">PAUSE</button>
+  <button onclick="toggleNight()">DAY / NIGHT</button>
+  <button onclick="restartGame()">RESTART</button>
+  <button onclick="useNitro()">NITRO</button>
+</div>
+
+<div class="mobile">
+  <button ontouchstart="keys.a=true" ontouchend="keys.a=false">◀</button>
+  <button ontouchstart="keys.d=true" ontouchend="keys.d=false">▶</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
